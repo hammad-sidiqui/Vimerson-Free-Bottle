@@ -1,0 +1,644 @@
+html {
+    height: 100%;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px;
+    width: 100%;
+}
+
+body {
+    background-image: url("../images/free-bottle_bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+
+ol,
+ul {
+    padding: 0 !important;
+    margin-bottom: 0;
+}
+
+a {
+    color: #5abe26 !important;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 3px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #3c8514;
+}
+
+
+
+/* Form styles */
+#form {
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+
+#form fieldset:not(:first-of-type) {
+    display: none;
+}
+
+img.logo {
+    max-width: 155px;
+    margin-top: 15px;
+}
+
+#form label, .modal label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+/* Inputs */
+#form input, #form select, .valid-input {
+    border: 1px solid #d7dcde;
+    outline: 0;
+    border-radius: 5px;
+    color: #51595d;
+    font-size: 14px;
+    height: 46px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input.error {
+    font-size: 14px !important; 
+}
+
+#form textarea, .modal textarea {
+    border: 1px solid #d7dcde;
+    outline: 0;
+    display: block;
+    border-radius: 5px;
+    color: #51595d;
+    width: 100%;
+    font-size: 14px;
+    height: 90px;
+    background: #fff;
+    resize: none;
+    padding: 5px 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+textarea.answer {
+    height: 54px !important;
+}
+
+#form input:focus,
+#form textarea:focus,
+.modal textarea:focus,
+#form select:focus {
+    outline: 0;
+    border: 1px solid #8a8a8a;
+    -webkit-box-shadow: 0 0 5px #cacaca;
+    box-shadow: 0 0 5px #cacaca;
+    -webkit-transition: border-color .25s ease-in-out, -webkit-box-shadow .5s;
+    transition: border-color .25s ease-in-out, -webkit-box-shadow .5s;
+    transition: box-shadow .5s, border-color .25s ease-in-out;
+    transition: box-shadow .5s, border-color .25s ease-in-out, -webkit-box-shadow .5s;
+}
+
+/* Buttons */
+
+#form .submitbutton {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0 30px;
+    min-width: 168px;
+    cursor: pointer;
+    margin: 10px 0;
+    display: inline-block;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    background: #5abe26;
+    text-shadow: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    border: 1px solid #5abe26;
+    box-shadow: 0 6px 13px 0 rgb(0 0 0 / 8%);
+}
+
+#form .action-button, .modal-close, .publish-to-amazon {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff !important;
+    min-width: 168px;
+    cursor: pointer;
+    padding: 0 15px;
+    margin: 10px 0;
+    display: inline-block;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    background: #5abe26;
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 45px;
+    font-size: 14px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 13px 0 rgb(0 0 0 / 8%);
+    border: 1px solid #5abe26;
+}
+
+#form .back.action-button, .modal-close {
+    border: 1px solid #5abe26;
+    color: #5abe26 !important;
+    background: #fff;
+    box-shadow: 0 6px 13px 0 rgb(0 0 0 / 8%);
+    box-sizing: border-box;
+}
+
+#form .back.action-button:hover, .modal-close:hover {
+    color: #fff !important;
+    background-color: #5abe26;
+}
+
+#form .action-button:hover,
+.publish-to-amazon:hover,
+#form .submitbutton:hover {
+    box-shadow: none;
+    outline: none;
+    background: #3c8514;
+    border: 1px solid #5abe26;
+}
+
+#form .action-button:focus,
+.publish-to-amazon:focus,
+#form .submitbutton:focus {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #5abe26;
+}
+
+.modal-close, .publish-to-amazon {
+    height: 46px;
+}
+
+.control-label.question {
+    font-weight: 600;
+}
+
+.error {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: #f44336 !important;
+    margin-bottom: 0 !important;
+}
+
+.required-asterisk {
+    color: #f44336 !important;
+}
+
+/* Headings */
+.step-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 0px 20px 0;
+    /* border-bottom: solid 2px #f4f4f4; */
+    color: #404040;
+}
+
+.product-experience-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 30px 0px 0px 0;
+    border-top: solid 2px #f4f4f4;
+    color: #404040;
+}
+
+.modal-product-experience-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 0px 0px 0;
+    color: #404040;
+}
+
+/* Progressbar */
+#progressbar {
+    margin-bottom: 50px;
+    overflow: hidden;
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: #5a6971;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    width: calc(100%/4);
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+#progressbar li.active {
+    color: #5abe26;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 25px;
+    line-height: 25px;
+    display: block;
+    font-size: 13px;
+    color: #5a6971;
+    background: #daeed0;
+    border-radius: 3em;
+    margin: 0 auto 5px auto;
+    text-align: center;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #dadada;
+    position: absolute;
+    left: -50%;
+    top: 12px;
+    z-index: -1;
+}
+
+#progressbar li:first-child:after {
+    content: none;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #5abe26;
+    color: white;
+}
+
+
+
+.rating-stars ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rating-stars ul>li.star {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.rating-stars ul>li.star>i.bi {
+    font-size: 2.25em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.rating-stars ul>li.star.hover>i.bi {
+    color: #ffe052;
+}
+
+.rating-stars ul>li.star.selected>i.bi {
+    color: #ffd200;
+
+}
+
+.free-bottles .col {
+    flex: 1 0 20%;
+}
+
+.product_free_bottle {
+    max-width: 154px;
+    min-width: 154px;
+}
+
+.product_image {
+    padding: 25px 0 20px;
+    background: #f0f0f0;
+    background: radial-gradient(circle, #f0f0f0 0, #fff 38%, rgba(207, 207, 207, .67411) 100%);
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.product_image img {
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.product-title {
+    font-size: 12px;
+    margin: 8px 0;
+    padding: 0;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #404040;
+    font-weight: 500;
+}
+
+.selected-product .product_image {
+    border: 2px solid #5abe26;
+}
+
+.selected-product .product-title {
+    color: #5abe26;
+}
+
+.products .col {
+    flex: 1 0 33.5%;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.terms-conditions,
+.amazon-order-error {
+    float: left;
+    font-size: 13px;
+    display: block;
+    border-top: solid 2px #f4f4f4;
+}
+
+.amazon-order-error {
+    font-size: 13px;
+}
+
+.last-step-footer {
+    border-top: solid 2px #f4f4f4;
+}
+
+.thank-you {
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.loader-overlay {
+    position: fixed;
+    background: #000000a6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+.loader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0px;
+    text-align: left;
+}
+
+.loader span {
+    position: absolute;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background: #5abe26;
+    -webkit-animation: loader 1.5s linear infinite;
+    animation: loader 1.5s linear infinite;
+}
+
+.loader span:last-child {
+    animation-delay: -0.9s;
+    -webkit-animation-delay: -0.9s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        -webkit-transform: scale(0, 0);
+        opacity: 0.8;
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.confirmation-details h5 {
+    background: #f7f7f7;
+    padding: 7px 10px;
+}
+
+.confirmation-details p {
+    margin-bottom: 0;
+}
+
+.confirmation-details .personal-details p {
+    position: relative;
+}
+
+.confirmation-details .personal-details p:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 18px;
+    width: 2px;
+    background-color: #e8e8e8;
+}
+
+.confirmation-details .personal-details p:last-child:before {
+    content: none;
+}
+
+.confirmation-details .question-answer {
+    margin-bottom: 1rem;
+}
+
+.confirmation-details .question-answer:last-child {
+    margin-bottom: 0;
+}
+
+.confirmation-details .question-answer .question {
+    font-weight: 600;
+}
+
+.free-bottle img {
+    width: 90px;
+}
+
+.free-bottle p {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #5abe26;
+    font-weight: 500;
+}
+
+.confirmation-details .rating-stars ul>li.star {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.confirmation-details .rating-stars ul>li.star>i.bi {
+    font-size: 1.75em;
+}
+
+.form-select {
+    cursor: pointer;
+}
+
+.qualify-bottles-alert {
+    text-align: center;
+    padding: 2px;
+    color: green;
+}
+
+@media screen and (max-width: 480px) {
+    #form .action-button, #form .submitbutton {
+        width: 100%;
+    }
+
+    .confirmation-details .personal-details p {
+        margin-bottom: 8px;
+    }
+
+    .confirmation-details .personal-details p:before {
+        content: none;
+    }
+}
+
+.amazon-order-error {
+    font-size: 13px;
+}
+
+.order-divider {
+    border-right: 2px solid #dadada;
+}
+.fs-13 {
+    font-size: 13px;    
+}
+
+@media (max-width: 991px)  {
+    .order-divider {
+        border-right: none;
+    }
+}
+
+
+.intercom-message {
+    position: fixed;
+    right: 100px;
+    bottom: 27px;
+    animation: slideInRight 1s forwards;
+    animation-delay: .1s;
+}
+
+.intercom-message .intercom-message-text {
+    background: #fff;
+    border-radius: 4px;
+    display: block;
+    text-decoration: none;
+    padding: 0;
+    font-weight: 400;
+    -moz-box-shadow: 0 7px 6px 1px rgba(0,0,0,.16);
+    box-shadow: 0 3px 6px 1px rgb(0 0 0 / 16%);
+}
+
+.intercom-message .intercom-message-text:after {
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    bottom: 13px;
+    border: 10px solid hsla(0,0%,100%,0);
+    right: -20px;
+    border-left-color: #fff;
+}
+
+.intercom-message .intercom-message-text p {
+    color: #212529;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid transparent;
+    max-height: 96px;
+}
+
+.intercom-message .intercom-message-close-btn {
+    top: -10px;
+    left: -10px;
+    margin: 0;
+    position: absolute;
+    object-fit: contain;
+    line-height: 12px;
+    background: #616161;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 2px 5px 3px 5px;
+    height: 20px;
+    width: 20px;
+    box-shadow: 0 2px 10px 0 rgb(53 63 69 / 15%), 0 1px 2px 0 rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.intercom-message .intercom-message-close-btn:hover {
+    background: #464646;
+}
