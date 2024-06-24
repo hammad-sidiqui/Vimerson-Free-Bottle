@@ -403,8 +403,6 @@ class VimersonHealthController extends Controller
         ]);
 
         if ($validator->fails()) return $this->resValidator(current($validator->errors()->all()));
-
-        $shopify_url = env('SHOPIFY_AUTH_URL') ? env('SHOPIFY_AUTH_URL') : 'https://32061f50aaf6387180f5554cfccc8e6b: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@vimersonhealth.myshopify.com/admin/orders.json';
             
         $shopify_order_data = [];
 
